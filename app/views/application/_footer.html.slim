@@ -1,0 +1,27 @@
+#stickey_footer
+
+  ul#footer_menu
+    li: a Flatstack Game © 2016
+  ul#social_icons
+
+    li style= "margin-right: 26px; margin-top: 20px;"
+      a.twitter-share-button href="https://twitter.com/share"
+      javascript:
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+    li style="margin-top: 20px;"
+      script src="https://apis.google.com/js/plusone.js" type="text/javascript"
+      .g-plus data-action="share" data-annotation="bubble"
+
+    li style="margin-right: -10px;"
+      #fb-root
+        javascript:
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+
+      .fb-like datasend="false" data-layout="button_count" data-width="150" data-show-faces="true" data-colorscheme="dark"
