@@ -1,41 +1,52 @@
 #stickey_footer
 
-  .footer style="position: static;"
+  .container
 
-    #social_icons
+    .box style="white-space: nowrap;"
 
-      .social style= "margin-top: 15px;"
-        a.twitter-share-button href="https://twitter.com/share" data-via="FlatStack" data-lang="ru"
-        javascript:
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        #links
+          ul
+            li = link_to "Home", root_path
+            li: a About
+            li: a href="http://www.flatstack.com/" Website
+            li: a href="http://www.flatstack.com/contact/" Contact us
 
-      .social style="margin-top: 15px;"
-        script src="https://apis.google.com/js/plusone.js" type="text/javascript"
-        .g-plus data-action="share" data-annotation="bubble"
 
-      .social style="margin-top: 11px;"
-        #fb-root
-          javascript:
-            (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+        .footer_right style="float: right; width: 200px;"
 
-        .fb-like datasend="false" data-layout="button_count" data-width="150" data-show-faces="true" data-colorscheme="dark"
+          #footer_menu
+            #social: a Flatstack © 2016
 
-      /li style="margin-top: 20px;"
-        script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"
-        javascript:
-          VK.init({apiId: 3682263, onlyWidgets: true});
+          #social_icons
 
-        #vk_like
+              .social
+                a.twitter-share-button href="https://twitter.com/share" data-via="FlatStack" data-lang="en"
+                javascript:
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
-        javascript:
-          VK.Widgets.Like("vk_like", {type: "button", height: 20});
+              .social
+                script src="https://apis.google.com/js/plusone.js" type="text/javascript" {lang: 'en'}
+                .g-plus data-action="share" data-annotation="bubble"
 
-    #footer_menu
-      #social: a Flatstack Game © 2016
+              .social
+                #fb-root
+                  javascript:
+                    (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_EN/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
 
+                .fb-like datasend="false" data-layout="button_count" data-width="150" data-show-faces="true" data-colorscheme="dark"
+
+              /li style="margin-top: 20px;"
+                script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"
+                javascript:
+                  VK.init({apiId: 3682263, onlyWidgets: true});
+
+                #vk_like
+
+                javascript:
+                  VK.Widgets.Like("vk_like", {type: "button", height: 20});
